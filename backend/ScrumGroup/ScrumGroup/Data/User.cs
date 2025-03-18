@@ -9,9 +9,6 @@ public class User
     [Column(Order = 0)]
     public int UserId { get; set; }
 
-    [Key]
-    [Column(Order = 1)]
-    public int ReligionId { get; set; }
 
     [Required]
     public string Username { get; set; }
@@ -24,5 +21,6 @@ public class User
     public string? LastName { get; set; }
 
     [ForeignKey("ReligionKey")]
+    public int ReligionId { get; set; }
     public Religion? Religion { get; set; }
 }

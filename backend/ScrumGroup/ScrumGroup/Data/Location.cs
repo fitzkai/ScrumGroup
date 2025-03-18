@@ -9,5 +9,6 @@ public class Location
     public int LocationId { get; set; }
     [ForeignKey("ReligionId")]
     public int ReligionId { get; set; }
+    public string LocationName { get; set; }
     public Religion? Religion { get; set; }
 }
