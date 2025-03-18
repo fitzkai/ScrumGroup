@@ -13,5 +13,5 @@ public class Discussion
     [Required]
     public DateTime TimePosted { get; set; }
     [Required]
-    public string Response  { get; set; }
+    public string? Response { get; set; }
 }
