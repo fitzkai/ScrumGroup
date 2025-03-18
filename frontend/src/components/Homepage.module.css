@@ -1,0 +1,157 @@
+.homepage {
+  background-color: #fbfbfb;
+  width: 100%;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+.statusBarIPhone {
+  background-color: #fbfbfb;
+  width: auto;
+  min-height: 50px;
+  padding-top: 21px;
+}
+.frame {
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  display: flex;
+}
+.time {
+  color: #000;
+  white-space: nowrap;
+  text-align: center;
+  flex: 1;
+  align-self: stretch;
+  gap: 10px;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-left: 16px;
+  padding-right: 6px;
+  font-family: SF Pro, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 17px;
+  font-weight: 590;
+  line-height: 1;
+}
+.dynamicIslandspacer {
+  flex-shrink: 0;
+  align-self: stretch;
+  width: 124px;
+  height: 10px;
+  margin-top: auto;
+  margin-bottom: auto;
+  display: flex;
+}
+.levels {
+  flex: 1;
+  justify-content: center;
+  align-self: stretch;
+  align-items: center;
+  gap: 7px;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-left: 6px;
+  padding-right: 16px;
+  display: flex;
+}
+.img {
+  aspect-ratio: 1.58;
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 0;
+  align-self: stretch;
+  width: 19px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.img2 {
+  aspect-ratio: 1.42;
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 0;
+  align-self: stretch;
+  width: 17px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.circleAccent {
+  background-color: #6eafde;
+  border-radius: 50%;
+  width: 100%;
+  min-height: 90px;
+  margin-top: 7px;
+  display: flex;
+  position: relative;
+}
+.div2 {
+  background-color: #7ecdff;
+  flex-direction: column;
+  align-items: center;
+  width: auto;
+  margin-top: -44px;
+  padding: 70px 8px;
+  display: flex;
+}
+.div3 {
+  aspect-ratio: 1;
+  background-color: #fff;
+  border-radius: 50%;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  width: 200px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-top: 40px;
+  display: flex;
+}
+.img3 {
+  aspect-ratio: 1.5;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 23px;
+  width: 100%;
+}
+.interfaithExplorer {
+  color: #000;
+  letter-spacing: -1.65px;
+  text-align: center;
+  align-self: center;
+  width: 240px;
+  margin-top: 60px;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 55px;
+  font-weight: 700;
+  line-height: 66px;
+}
+.button {
+  color: #f5f5f5;
+  background-color: #00000080;
+  border: 1px solid #2c2c2c;
+  border-radius: 8px;
+  align-self: center;
+  gap: 8px;
+  width: 160px;
+  max-width: 100%;
+  min-height: 60px;
+  margin-top: 52px;
+  padding: 22px 12px;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1;
+  overflow: hidden;
+}
+.homeIndicator {
+  background-color: #000;
+  border-radius: 100px;
+  flex-shrink: 0;
+  align-self: center;
+  width: 144px;
+  height: 5px;
+  margin-top: 50px;
+  display: flex;
+  margin-bottom: -50px;
+}
+
