@@ -135,3 +135,4 @@ C:\Users\natha\Source\Repos\ScrumGroup\backend\ScrumGroup\ScrumGroup\obj\Debug\n
 C:\Users\natha\Source\Repos\ScrumGroup\backend\ScrumGroup\ScrumGroup\obj\Debug\net8.0\ScrumGroup.pdb
 C:\Users\natha\Source\Repos\ScrumGroup\backend\ScrumGroup\ScrumGroup\obj\Debug\net8.0\ScrumGroup.genruntimeconfig.cache
 C:\Users\natha\Source\Repos\ScrumGroup\backend\ScrumGroup\ScrumGroup\obj\Debug\net8.0\ref\ScrumGroup.dll
+C:\Users\natha\Source\Repos\ScrumGroup\backend\ScrumGroup\ScrumGroup\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
