@@ -28,8 +28,11 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
         onChange={handleSearch}
         aria-label="Search discussions"
       />
-      <button aria-label="Search" onClick={() => onSearch?.(searchQuery)}>
-
+      <button
+        className="search-button"
+        aria-label="Search"
+        onClick={() => onSearch?.(searchQuery)}
+      >
         <svg
           width="16"
           height="17"

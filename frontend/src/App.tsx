@@ -1,11 +1,11 @@
 import './App.css';
 import DiscussionBoard from './components/DiscussionBoard';
-import ReligionPage from './ReligionPage';
+import ReligionPage from './components/ReligionPage';
 
 function App() {
   return (
     <>
-      <ReligionPage />
+      {/* <ReligionPage /> */}
       <DiscussionBoard />
     </>
   );
