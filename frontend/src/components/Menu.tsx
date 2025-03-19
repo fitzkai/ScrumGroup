@@ -77,6 +77,8 @@ function Menu() {
       <div className={styles.div}>
         <CircularIcon />
 
+<br />
+<br />
         <main className={styles.div3}>
           <MenuItem
             iconSrc="https://cdn.builder.io/api/v1/image/assets/TEMP/b134e21fac10a709e12dd07d4f07694299d5ca5c3b53940aa0469fc6dd2198c0?placeholderIfAbsent=true&apiKey=401ab768922c453b98ebcf2dec4c4d64"
