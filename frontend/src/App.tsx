@@ -40,8 +40,9 @@ function App() {
           >
             Open Protestant Study Guide
           </button>
-        </>
       )}
+        <ReligionPage />
+        <DiscussionBoard />
     </>
   );
 }
