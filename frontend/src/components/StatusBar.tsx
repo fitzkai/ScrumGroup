@@ -1,11 +1,12 @@
 import React from 'react';
-import styles from './InputDesign.module.css';
+import styles from './DiscussionBoard.module.css';
 
-export const StatusBar: React.FC = () => {
+const StatusBar: React.FC = () => {
   return (
-    <header className={styles.div2}>
-      <time className={styles.div3}>9:41</time>
-      <div className={styles.div4}>
+    <header className={styles.statusBar}>
+      <div className={styles.statusBarContent}>
+        <div className={styles.statusTime}>9:41</div>
+        <div className={styles.statusIcons} />
         <div>
           <svg
             width="135"
@@ -13,7 +14,7 @@ export const StatusBar: React.FC = () => {
             viewBox="0 0 135 14"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="h-[14px]"
+            className="flex px-[16px] pr-[6px] justify-center items-center gap-[7px] flex-[1_0_0]"
           >
             <path
               fillRule="evenodd"
@@ -55,3 +56,5 @@ export const StatusBar: React.FC = () => {
     </header>
   );
 };
+
+export default StatusBar;
