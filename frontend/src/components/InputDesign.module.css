@@ -162,3 +162,130 @@
   font-weight: bold;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional shadow */
 }
+
+.container {
+  min-height: screen;
+  background-color: white;
+  flex-direction: column;
+  width: 100%;
+  display: flex;
+}
+.statusBar {
+  flex: shrink;
+  background-color: white;
+  width: auto;
+  padding-left: 50px;
+  padding-top: 21px;
+}
+.statusBarContent {
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 16px;
+  padding-right: 16px;
+  display: flex;
+}
+.time {
+  color: #000;
+  font-family:
+    SF Pro,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 17px;
+  font-weight: 590;
+  line-height: 22px;
+}
+.statusIcons {
+  align-items: center;
+  gap: 7px;
+  display: flex;
+}
+.mainContent {
+  flex-direction: column;
+  flex: 1;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+}
+.headerSection {
+  align-items: center;
+  margin-top: 43px;
+  display: flex;
+}
+.title {
+  color: #000;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-family:
+    SF Pro,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-seriff;
+  font-size: 48px;
+}
+.searchInputContainer {
+  background-color: #fff;
+  border: 1px solid #1e1e1e;
+  border-radius: 9999px;
+  align-items: center;
+  width: auto;
+  height: 55px;
+  padding-left: 16px;
+  padding-right: 16px;
+  display: flex;
+}
+.searchInput {
+  color: #1e1e1e;
+  background-color: transparent;
+  flex: 1;
+  font-family:
+    SF Pro,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 16px;
+  border: none;
+  outline: none;
+}
+.optionsContainer {
+  flex-direction: column;
+  gap: 73px;
+  margin-top: 63px;
+  display: flex;
+}
+.optionButton {
+  color: #000;
+  background-color: #8fd2fd;
+  border: 1px solid #000;
+  border-radius: 15px;
+  width: 100%;
+  height: 108px;
+  font-family:
+    SF Pro,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 32px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  text-align: center;
+}
+.bottomIndicatorContainer {
+  justify-content: center;
+  align-items: center;
+  height: 34px;
+  margin-top: auto;
+  margin-bottom: 8px;
+  display: flex;
+}
+.bottomIndicator {
+  background-color: #000;
+  border-radius: 100px;
+  width: 144px;
+  height: 5px;
+}
+2: 45 InputDesign.module.css;
