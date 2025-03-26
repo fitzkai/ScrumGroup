@@ -13,6 +13,7 @@ public class StudyGuide
     [ForeignKey("UserId")]
     public int UserId { get; set; }
     public User? User { get; set; }
+    public string? VideoSrc { get; set; }
     public string? Response1 { get; set; }
     public string? Response2 { get; set; }
     public string? Response3 { get; set; }
