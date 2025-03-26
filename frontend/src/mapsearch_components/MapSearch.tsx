@@ -1,48 +1,104 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './MapSearch.css';
 import StatusBar from './StatusBar';
+import { useState, useEffect } from 'react';
 
 function MapSearch() {
+  const [selectedContinent, setSelectedContinent] = useState('');
+  const [locations, setLocations] = useState([]); // Stores fetched data
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    fetch('http://localhost:5000/Religion/AllLocations') // Ensure the correct backend URL
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error('Failed to fetch data');
+        }
+        return response.json();
+      })
+      .then((data) => {
+        setLocations(data);
+        setLoading(false);
+      })
+      .catch((error) => {
+        setError(error.message);
+        setLoading(false);
+      });
+  }, []);
+
+  const continents = [
+    'Bangladesh',
+    'Brazil',
+    'Canada',
+    'China',
+    'India',
+    'Indonesia',
+    'Iran',
+    'Israel',
+    'Japan',
+    'Myanmar',
+    'Nepal',
+    'Pakistan',
+    'Singapore',
+    'South Korea',
+    'Sri Lanka',
+    'Thailand',
+    'The United Kingdom',
+    'The United States',
+    'Yemen',
+  ];
+
+  const filteredLocations = selectedContinent
+    ? locations.filter((loc) => loc.country === selectedContinent)
+    : locations;
+
   return (
     <main className="container py-5" style={{ paddingTop: '80px' }}>
-      {/* Add padding-top to account for fixed status bar */}
       <StatusBar />
       <div className="text-center my-4">
         <h1 className="display-4 fw-bold">Search by Region</h1>
       </div>
       <div className="d-flex flex-column align-items-center">
-        {/* Map Image */}
         <figure className="border rounded-3 shadow-lg mb-4">
           <img
-            src="/WorldMap.jpg"
+            src="/SimpleWorldMap.jpg"
             alt="World map"
             className="img-fluid rounded-3"
           />
         </figure>
 
-        <p className="lead text-center mb-4">
-          Select a country to see which religions are most common in that
-          region!
-        </p>
+        <select
+          className="form-select text-center mb-4 w-50"
+          value={selectedContinent}
+          onChange={(e) => setSelectedContinent(e.target.value)}
+        >
+          <option value="" disabled>
+            Select a Country
+          </option>
+          {continents.map((continent) => (
+            <option key={continent} value={continent}>
+              {continent}
+            </option>
+          ))}
+        </select>
 
-        {/* Results Section */}
         <section className="mt-4 text-center">
-          <h2 className="h4 text-success fw-bold">Top 5 in this Region:</h2>
-          <ul className="list-group list-group-flush mx-auto w-75">
-            <li className="list-group-item">Christianity ~ 2.3 billion</li>
-            <li className="list-group-item">Islam ~ 1.9 billion</li>
-            <li className="list-group-item">Hinduism ~ 1.2 billion</li>
-            <li className="list-group-item">Buddhism ~ 520 million</li>
-            <li className="list-group-item">
-              Chinese Trad. Religions (Confucianism, Taoism, etc.) ~ 400 million
-            </li>
-          </ul>
+          <h2 className="h4 text-success fw-bold">
+            Top Religion in {selectedContinent || 'The World'}
+          </h2>
+          {loading && <p>Loading...</p>}
+          {error && <p className="text-danger">{error}</p>}
+          {!loading && !error && (
+            <ul className="list-group">
+              {filteredLocations.map((loc) => (
+                <li key={loc.id} className="list-group-item">
+                  {loc.religion} - {loc.percentage}%
+                </li>
+              ))}
+            </ul>
+          )}
         </section>
-
-        {/* Home Indicator */}
-        <div className="mt-4 border-top w-50 pt-2 text-center text-muted">
-          <small>Swipe up to go back</small>
-        </div>
       </div>
     </main>
   );
