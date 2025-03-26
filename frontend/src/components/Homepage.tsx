@@ -1,5 +1,3 @@
-'use client';
-import React from 'react';
 import styles from './Homepage.module.css';
 import StatusBar from './StatusBar';
 import HomeContent from './HomeContent';

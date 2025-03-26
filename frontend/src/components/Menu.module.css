@@ -1,6 +1,6 @@
 .menu {
   background-color: #fbfbfb;
-  width: 100%;
+  width: 480px;
   max-width: 480px;
   margin-left: auto;
   margin-right: auto;
@@ -85,6 +85,7 @@
   fill: #1d1b20;
   width: 16px;
   margin-right: 400px; /* Pushes it to the left */
+  cursor: pointer;
 }
 
 .div3 {
@@ -180,4 +181,10 @@
   height: 5px;
   margin-top: 367px;
   display: flex;
+}
+
+button {
+  background-color: #7ecdff;
+  color: #000;
+  font-weight: bold;
 }
