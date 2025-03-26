@@ -85,6 +85,7 @@
   font-family: Inter;
   font-size: 11px;
   line-height: 1.4;
+  text-align: left;
 }
 .div16 {
   flex-direction: column;
@@ -173,6 +174,7 @@
   font-family: Inter;
   font-size: 12px;
   line-height: 1.4;
+  text-align: left;
 }
 .div32 {
   flex-direction: column;
@@ -261,6 +263,7 @@
   font-family: Inter;
   font-size: 12px;
   line-height: 1.4;
+  text-align: left;
 }
 .div48 {
   flex-direction: column;

@@ -182,7 +182,7 @@ export const ReligionCard: React.FC<ReligionCardProps> = ({
           />
         </div>
       </div>
-      <button>
+      <button>{/* onClick={naviagate('')} */}
         <div className={getExternalResourcesClass()}>
           <ExternalLinkIcon />
           <span className={getExternalResourcesTextClass()}>

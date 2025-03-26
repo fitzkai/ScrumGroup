@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from './DiscussionBoard.module.css';
-
 interface HeaderProps {
   title: string;
   onBackClick?: () => void;

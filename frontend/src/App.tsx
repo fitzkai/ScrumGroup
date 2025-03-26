@@ -5,7 +5,7 @@ import ReligionPage from './components/ReligionPage';
 function App() {
   return (
     <>
-      {/* <ReligionPage /> */}
+      <ReligionPage />
       <DiscussionBoard />
     </>
   );

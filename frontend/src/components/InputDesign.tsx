@@ -1,10 +1,9 @@
 'use client';
 import React from 'react';
 import styles from './InputDesign.module.css';
-import StatusBar from './StatusBar';
+// import StatusBar from './StatusBar';
 import { PageHeader } from './PageHeader';
 import { ReligionCard } from './ReligionCard';
-import { BottomNavIndicator } from './BottomNavIndicator';
 
 const InputDesign: React.FC = () => {
   // Religion data
@@ -28,7 +27,7 @@ const InputDesign: React.FC = () => {
 
   return (
     <main className={styles.div}>
-      <StatusBar />
+      {/* <StatusBar /> */}
       <section className={styles.div5}>
         <PageHeader title="Religion Information" />
         <div className={styles.div8}>
@@ -41,7 +40,6 @@ const InputDesign: React.FC = () => {
           ))}
         </div>
       </section>
-      <BottomNavIndicator />
     </main>
   );
 };

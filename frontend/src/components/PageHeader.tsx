@@ -1,11 +1,13 @@
 import React from 'react';
 import styles from './InputDesign.module.css';
+// import { useNavigate } from 'react-router-dom';
 
 interface PageHeaderProps {
   title: string;
 }
 
 export const PageHeader: React.FC<PageHeaderProps> = ({ title }) => {
+  // const navigate = useNavigate();
   return (
     <header className={styles.div6}>
       <button aria-label="Menu">

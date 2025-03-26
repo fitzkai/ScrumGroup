@@ -6,7 +6,6 @@ import styles from './DiscussionBoard.module.css';
 interface SearchBarProps {
   onSearch?: (query: string) => void;
 }
-
 const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
   const [searchQuery, setSearchQuery] = useState('');
 

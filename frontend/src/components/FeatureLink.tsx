@@ -51,7 +51,7 @@ export const FeatureLink: React.FC<FeatureLinkProps> = ({
   return (
     <a href="#" className={getContainerClass()}>
       <CircleStarIcon />
-      <span className={getTextClass()}>{title}</span>
+      <span className={getTextClass()}>{title}</span> {/* onclick={() => navigate('')} */}
     </a>
   );
 };
