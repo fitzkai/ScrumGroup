@@ -1,34 +1,48 @@
-import styles from './MapSearch.module.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './MapSearch.css';
 import StatusBar from './StatusBar';
 
 function MapSearch() {
   return (
-    <main className={styles.mapSearch}>
+    <main className="container py-5" style={{ paddingTop: '80px' }}>
+      {/* Add padding-top to account for fixed status bar */}
       <StatusBar />
-      <div className={styles.contentContainer}>
-        <section>
-          <h1 className={styles.searchTitle}>Search by Region</h1>
-        </section>
-        <figure className={styles.mapContainer}>
+      <div className="text-center my-4">
+        <h1 className="display-4 fw-bold">Search by Region</h1>
+      </div>
+      <div className="d-flex flex-column align-items-center">
+        {/* Map Image */}
+        <figure className="border rounded-3 shadow-lg mb-4">
           <img
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/1d3ff85f1bce6bc5e04a7f2629f56631cfe74d161b93b24e4300b64ec6f0d62b?placeholderIfAbsent=true&apiKey=fcbc18c0ae9f445a9c83d7acaf1eb233"
+            src="/WorldMap.jpg"
             alt="World map"
-            className={styles.mapImage}
+            className="img-fluid rounded-3"
           />
         </figure>
-        <p className={styles.instructionText}>
+
+        <p className="lead text-center mb-4">
           Select a country to see which religions are most common in that
           region!
         </p>
-        <section>
-          <h2 className={styles.resultsTitle}>Top 5 in this Region:</h2>
-          <p>Catholicism</p>
-          <p>Protestant</p>
-          <p>Hinduism</p>
-          <p>Buddhism</p>
-          <p>Judaism</p>
+
+        {/* Results Section */}
+        <section className="mt-4 text-center">
+          <h2 className="h4 text-success fw-bold">Top 5 in this Region:</h2>
+          <ul className="list-group list-group-flush mx-auto w-75">
+            <li className="list-group-item">Christianity ~ 2.3 billion</li>
+            <li className="list-group-item">Islam ~ 1.9 billion</li>
+            <li className="list-group-item">Hinduism ~ 1.2 billion</li>
+            <li className="list-group-item">Buddhism ~ 520 million</li>
+            <li className="list-group-item">
+              Chinese Trad. Religions (Confucianism, Taoism, etc.) ~ 400 million
+            </li>
+          </ul>
         </section>
-        <div className={styles.homeIndicator} role="presentation" />
+
+        {/* Home Indicator */}
+        <div className="mt-4 border-top w-50 pt-2 text-center text-muted">
+          <small>Swipe up to go back</small>
+        </div>
       </div>
     </main>
   );
