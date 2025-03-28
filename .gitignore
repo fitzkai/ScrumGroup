@@ -27,7 +27,9 @@ backend/ScrumGroup/ScrumGroup/obj/Debug
 
 # .net Ignores
 ScrumGroup/bin
+**/bin/
 ScrumGroup/obj
+**/obj/
 
 # .vs ignore
 .vs
