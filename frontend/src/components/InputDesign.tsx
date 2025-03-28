@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 import styles from './InputDesign.module.css';
-import { StatusBar } from './StatusBar';
+import StatusBar from './StatusBar';
 import { PageHeader } from './PageHeader';
 import { ReligionCard } from './ReligionCard';
 import { BottomNavIndicator } from './BottomNavIndicator';

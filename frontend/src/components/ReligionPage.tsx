@@ -1,6 +1,5 @@
-import { FeatureLink } from './components/FeatureLink';
-import InputDesign from './components/InputDesign';
-
+import { FeatureLink } from './FeatureLink';
+import InputDesign from './InputDesign';
 
 function ReligionPage() {
   return (
@@ -8,7 +7,8 @@ function ReligionPage() {
       <FeatureLink
         title={'World Religions'}
         religionName={''}
-        featureType={'study'}/>
+        featureType={'study'}
+      />
       <InputDesign />
     </>
   );

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import './StatusBar.css'; // Ensure this file exists
-import 'bootstrap/dist/js/bootstrap.bundle.min.js'; // Add Bootstrap JavaScript
+import './StatusBar.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 const StatusBar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,11 +27,25 @@ const StatusBar: React.FC = () => {
               Home
             </Link>
             <Link
-              to="/calendar"
+              to="/map"
               className="dropdown-item"
               onClick={() => setIsOpen(false)}
             >
-              Calendar
+              Map Search
+            </Link>
+            <Link
+              to="/studyguide"
+              className="dropdown-item"
+              onClick={() => setIsOpen(false)}
+            >
+              Study Guide
+            </Link>
+            <Link
+              to="/discussion"
+              className="dropdown-item"
+              onClick={() => setIsOpen(false)}
+            >
+              Discussion Board
             </Link>
           </div>
         )}

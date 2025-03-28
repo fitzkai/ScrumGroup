@@ -25,7 +25,7 @@ const StudyGuide: React.FC = () => {
   const handleSubmit = () => {
     console.log('User Responses:', responses);
     alert('Your responses have been submitted!');
-  
+
     // Reset responses after submission
     setResponses({
       learned: '',
@@ -34,9 +34,9 @@ const StudyGuide: React.FC = () => {
       similarities: '',
       additionalNotes: '',
     });
-  
+
     // Optionally, remove stored responses from localStorage
-    localStorage.removeItem("studyGuideResponses"); 
+    localStorage.removeItem('studyGuideResponses');
   };
 
   return (
@@ -44,9 +44,7 @@ const StudyGuide: React.FC = () => {
       <div className="status-bar">
         <div className="status-time"></div>
         <div className="status-icons">
-          <div className="network-icons">
-            {/* Status Bar Icons */}
-          </div>
+          <div className="network-icons">{/* Status Bar Icons */}</div>
         </div>
       </div>
 
@@ -79,7 +77,9 @@ const StudyGuide: React.FC = () => {
         </div>
 
         <div className="question-container">
-          <h2 className="question-text">What was the main topic of this video?</h2>
+          <h2 className="question-text">
+            What was the main topic of this video?
+          </h2>
         </div>
         <div className="input-container">
           <textarea
@@ -92,7 +92,9 @@ const StudyGuide: React.FC = () => {
         </div>
 
         <div className="question-container">
-          <h2 className="question-text">How does Protestantism differ from your religion?</h2>
+          <h2 className="question-text">
+            How does Protestantism differ from your religion?
+          </h2>
         </div>
         <div className="input-container">
           <textarea
@@ -105,7 +107,9 @@ const StudyGuide: React.FC = () => {
         </div>
 
         <div className="question-container">
-          <h2 className="question-text">How is Protestantism similar to your religion?</h2>
+          <h2 className="question-text">
+            How is Protestantism similar to your religion?
+          </h2>
         </div>
         <div className="input-container">
           <textarea
