@@ -24,3 +24,7 @@ dist-ssr
 *.sw?
 .vs/ProjectEvaluation/
 backend/ScrumGroup/ScrumGroup/obj/Debug
+
+# .net Ignores
+ScrumGroup/bin
+ScrumGroup/obj
