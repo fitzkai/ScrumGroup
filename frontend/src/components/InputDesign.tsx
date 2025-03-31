@@ -135,7 +135,7 @@ const SearchOptions = () => {
     <section className={styles.optionsContainer}>
       <button className={styles.optionButton}>All religions A-Z</button>
       <button className={styles.optionButton}>Location Map</button>
-      <button className={styles.optionButton}>Popularity</button>
+      <button className={styles.optionButton}>Discussion Board</button>
     </section>
   );
 };
