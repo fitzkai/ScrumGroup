@@ -139,6 +139,22 @@ const SearchOptions = () => {
     </section>
   );
 };
+
+// Function to navigate to ReligionPage
+const goToReligionPage = () => {
+  navigate('/religions');
+};
+
+// Function to navigate to ReligionPage
+const goToReligionPage = () => {
+  navigate('/religions');
+};
+
+// Function to navigate to ReligionPage
+const goToReligionPage = () => {
+  navigate('/religions');
+};
+
 // BottomIndicator component for the bottom navigation indicator
 const BottomIndicator = () => {
   return (
