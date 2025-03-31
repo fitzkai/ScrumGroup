@@ -36,10 +36,21 @@ namespace ScrumGroup.Controllers
             return _religionContext.Users.ToList();
         }
 
-        [HttpGet("AllStudyGuides")]
-        public IEnumerable<StudyGuide> GetStudyGuides()
+        [HttpGet("AllStudyGuides/{guideId}")]
+        public ActionResult<StudyGuide> GetStudyGuides(int guideId)
         {
-            return _religionContext.StudyGuides.ToList();
+            var studyGuide = _religionContext.StudyGuides
+                .Include(sg => sg.Religion)
+                .Include(sg => sg.User)
+                .FirstOrDefault(sg => sg.GuideId == guideId);
+            if (studyGuide == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(studyGuide);
+
+
         }
 
         [HttpGet("AllDiscussions")]
