@@ -13,7 +13,7 @@ function App() {
           <Route path="/" element={<MapSearch />} />
           <Route path="/map" element={<MapSearch />} />
           <Route path="/religions" element={<ReligionPage />} />
-          <Route path="/studyguide" element={<StudyGuide />} />
+          <Route path="/studyguide/:GuideId" element={<StudyGuide />} />
           <Route path="discussion" element={<DiscussionBoard />} />
         </Routes>
       </Router>
