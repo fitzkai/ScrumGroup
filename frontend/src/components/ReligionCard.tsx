@@ -169,20 +169,23 @@ export const ReligionCard: React.FC<ReligionCardProps> = ({
             title="Study Guide"
             religionName={name}
             featureType="study"
+            destination="/StudyGuide"
           />
           <FeatureLink
             title="Similarities & Differences"
             religionName={name}
             featureType="similarities"
+            destination="/SimAndDiff"
           />
           <FeatureLink
             title="Discussion Board"
             religionName={name}
             featureType="discussion"
+            destination="/DiscussionBoard"
           />
         </div>
       </div>
-      <button>{/* onClick={naviagate('')} */}
+      <button className="external_resources">
         <div className={getExternalResourcesClass()}>
           <ExternalLinkIcon />
           <span className={getExternalResourcesTextClass()}>

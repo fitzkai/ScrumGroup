@@ -1,17 +1,21 @@
 import React from 'react';
 import styles from './InputDesign.module.css';
+import { useNavigate } from 'react-router-dom';
 
 interface FeatureLinkProps {
   title: string;
   religionName: string;
   featureType: 'study' | 'similarities' | 'discussion';
+  destination: string;
 }
 
 export const FeatureLink: React.FC<FeatureLinkProps> = ({
   title,
   religionName,
   featureType,
+  destination,
 }) => {
+  const navigate = useNavigate();
   // Get the appropriate container class based on religion and feature type
   const getContainerClass = () => {
     if (religionName === 'Catholicism') {
@@ -49,9 +53,12 @@ export const FeatureLink: React.FC<FeatureLinkProps> = ({
   };
 
   return (
-    <a href="#" className={getContainerClass()}>
+    <a
+      className={getContainerClass()}
+      onClick={() => navigate(destination)}
+    >
       <CircleStarIcon />
-      <span className={getTextClass()}>{title}</span> {/* onclick={() => navigate('')} */}
+      <span className={getTextClass()}>{title}</span>
     </a>
   );
 };

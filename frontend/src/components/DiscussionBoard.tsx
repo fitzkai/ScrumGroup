@@ -6,10 +6,12 @@ import Header from './Header';
 import SearchBar from './SearchBar';
 import FilterTags from './FilterTags';
 import DiscussionPost from './DiscussionPost';
+import { useNavigate } from 'react-router-dom';
 
 const DiscussionBoard: React.FC = () => {
   const [activeTag, setActiveTag] = useState('popular');
   const [searchQuery, setSearchQuery] = useState('');
+  const navigate = useNavigate();
 
   const filterTags = ['popular', 'recent', 'trending', 'Catholicism'];
 
@@ -43,6 +45,7 @@ const DiscussionBoard: React.FC = () => {
   );
 
   const handleBackClick = () => {
+    navigate(-1);
     console.log('Navigate back');
   };
 
