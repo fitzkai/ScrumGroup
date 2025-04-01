@@ -2,10 +2,11 @@ import React, { useState } from 'react';
 import './StudyGuide.css';
 import MenuIcon from '../assets/icons/MenuIcon';
 import YouTubeEmbed from './YouTubeEmbed';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom'; // ← added useParams
 
 const StudyGuide: React.FC = () => {
-  const navigate = useNavigate(); // 👈 React Router navigation
+  const navigate = useNavigate();
+  const { guideId } = useParams(); // ← grab guideId from URL
 
   // State to store user responses
   const [responses, setResponses] = useState({
@@ -25,24 +26,43 @@ const StudyGuide: React.FC = () => {
   };
 
   // Handle submit button click
-  const handleSubmit = () => {
-    console.log('User Responses:', responses);
-    alert('Your responses have been submitted!');
-
-    // Reset responses after submission
-    setResponses({
-      learned: '',
-      mainTopic: '',
-      differences: '',
-      similarities: '',
-      additionalNotes: '',
-    });
-
-    // Optionally, remove stored responses from localStorage
-    localStorage.removeItem('studyGuideResponses');
-
-    // 👇 Redirect back to the home page
-    navigate('/');
+  const handleSubmit = async () => {
+    console.log('Submit button clicked');
+    console.log('Responses:', responses);
+  
+    try {
+      const response = await fetch('https://localhost:5000/Religion/AllStudyGuides', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(responses),
+      });
+  
+      console.log('Fetch complete, status:', response.status);
+  
+      if (response.ok) {
+        const result = await response.json(); // If backend returns new guide info (optional)
+        console.log('Server response:', result);
+  
+        alert('Your responses have been submitted!');
+        setResponses({
+          learned: '',
+          mainTopic: '',
+          differences: '',
+          similarities: '',
+          additionalNotes: '',
+        });
+        localStorage.removeItem('studyGuideResponses');
+        navigate('/');
+      } else {
+        alert('Failed to submit. Please try again.');
+        console.error('Submission error:', await response.text());
+      }
+    } catch (error) {
+      alert('An error occurred while submitting.');
+      console.error('Submission exception:', error);
+    }
   };
 
   return (
