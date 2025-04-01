@@ -1,6 +1,8 @@
 'use client';
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import styles from './InputDesign.module.css';
+
 // StatusBar component for the top status bar
 const StatusBar = () => {
   return (
@@ -131,34 +133,33 @@ const SearchInput = () => {
 };
 // SearchOptions component for the four option buttons
 const SearchOptions = () => {
+  const navigate = useNavigate();
+
   return (
     <section className={styles.optionsContainer}>
-      <button className={styles.optionButton}>Location Map</button>
-      <button className={styles.optionButton}>All religions</button>
-      <button className={styles.optionButton}>Study Guide</button>
-      <button className={styles.optionButton}>Discussion Board</button>
+      <button className={styles.optionButton} onClick={() => navigate('/map')}>
+        Location Map
+      </button>
+      <button
+        className={styles.optionButton}
+        onClick={() => navigate('/religions')}
+      >
+        All Religions
+      </button>
+      <button
+        className={styles.optionButton}
+        onClick={() => navigate('/studyguide')}
+      >
+        Study Guide
+      </button>
+      <button
+        className={styles.optionButton}
+        onClick={() => navigate('/discussion')}
+      >
+        Discussion Board
+      </button>
     </section>
   );
-};
-
-// Function to navigate to LocationMapPage
-const goToReligionPage = () => {
-  navigate('/map');
-};
-
-// Function to navigate to ReligionPage
-const goToReligionPage = () => {
-  navigate('/religions');
-};
-
-// Function to navigate to the StudyGuide
-const goToReligionPage = () => {
-  navigate('/studyguide');
-};
-
-// Function to navigate to Discussion Board
-const goToReligionPage = () => {
-  navigate('/discussion');
 };
 
 // BottomIndicator component for the bottom navigation indicator
