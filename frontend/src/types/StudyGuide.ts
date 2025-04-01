@@ -1,19 +1,6 @@
-export interface Religion {
-  religionId: number;
-  religionName: string;
-  category: string;
-  overview: string;
-}
+import { Religion } from './Religion';
 
-export interface user {
-  userId: number;
-  username: string;
-  password: string;
-  firstName: string;
-  lastName: string;
-  religionId: number;
-  religion: Religion;
-}
+import { User } from './User';
 
 export interface StudyGuide {
   religion: any;
@@ -21,7 +8,7 @@ export interface StudyGuide {
   ReligionId: number;
   Religion: Religion; // Include the full Religion object
   UserId: number;
-  User: user; // Include the full User object
+  User: User; // Include the full User object
   VideoSrc: string | null; // Handle nullable values
   Response1: string | null;
   Response2: string | null;

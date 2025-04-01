@@ -1,9 +1,4 @@
-export interface Religion {
-  religionID: number;
-  religionName: string;
-  category: string;
-  overview: string;
-}
+import { Religion } from './Religion';
 
 export interface Location {
   locationId: number;
