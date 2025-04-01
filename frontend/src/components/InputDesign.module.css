@@ -1,241 +1,45 @@
-.div {
-  min-height: screen;
+/* Container holding the search interface */
+.container {
+  min-height: 100vh;
   background-color: #ffffff;
   flex-direction: column;
-  width: 100%;
-  display: flex;
-}
-.div2 {
-  background-color: #fff;
-  align-items: flex-start;
-  width: 100%;
-  height: 50px;
-  padding-top: 21px;
-  display: flex;
-}
-.div3 {
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  padding-left: 16px;
-  padding-right: 16px;
-  display: flex;
-}
-.div4 {
-  color: #000;
-  gap: 10px;
-  font-family: Roboto;
-  font-size: 17px;
-}
-.div5 {
-  width: 124px;
-  height: 10px;
-}
-.div6 {
-  width: 90%;
-  max-width: 400px;
-  padding: 20px;
-}
-.div7 {
-  align-items: center;
-  gap: 12px;
-  margin-top: 26px;
-  display: flex;
-}
-.div8 {
-  color: #000;
-  margin-top: 24px;
-  font-family: Roboto;
-  font-size: 48px;
-}
-.div9 {
-  background-color: #ece6f0; /* Light grayish-purple */
-  border-radius: 28px;
-  align-items: center;
-  gap: 4px;
-  width: 100%;
-  height: 56px;
-  margin-top: 24px;
-  display: flex;
-  padding: 5px 10px; /* Add padding for spacing */
-}
-.search-input {
-  background-color: #ece6f0; /* Same as the pill background */
-  color: black; /* Ensure text is readable */
-  border: none; /* Remove default border */
-  outline: none; /* Remove focus outline */
-  flex: 1;
-  font-family: Roboto;
-  font-size: 16px;
-  padding: 10px;
-  border-radius: 20px; /* Softens edges inside the pill */
-}
-.div10 {
-  flex: 1;
-  align-items: center;
-  gap: 4px;
-  padding: 4px;
-  display: flex;
-}
-.div11 {
-  justify-content: center;
-  align-items: center;
-  width: 48px;
-  height: 48px;
-  display: flex;
-}
-.div12 {
-  border-radius: 100px;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-}
-.div13 {
-  color: #49454f;
-  flex: 1;
-  font-family: Roboto;
-  font-size: 16px;
-}
-.div14 {
-  justify-content: flex-end;
-  align-items: center;
-  display: flex;
-}
-.div15 {
-  justify-content: center;
-  align-items: center;
-  width: 48px;
-  height: 48px;
-  display: flex;
-}
-.div16 {
-  border-radius: 100px;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-}
-.div17 {
-  flex-direction: column;
-  gap: 24px;
-  margin-top: 24px;
-  display: flex;
-}
-.div18,
-.div19,
-.div20 {
-  background-color: #add8e6; /* Light blue */
-  color: black; /* Ensure readable text */
-  border-width: 1px;
-  border-color: #000;
-  border-radius: 15px;
-  width: 100%;
-  height: 108px;
-  margin-top: 24px;
-  font-family: Roboto;
-  font-size: 32px;
-  text-align: center;
+  width: 125%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  padding: 1rem;
 }
 
-.div21 {
-  justify-content: center;
-  align-items: center;
-  height: 34px;
-  margin-top: auto;
-  display: flex;
-}
-.div22 {
-  background-color: #000;
-  border-radius: 100px;
-  width: 144px;
-  height: 5px;
-}
-
-.category-card {
-  background-color: white; /* Set explicit background */
-  color: black; /* Ensure text is readable */
-  padding: 12px;
-  border-radius: 10px;
-  text-align: center;
-  font-weight: bold;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional shadow */
-}
-
-.container {
-  min-height: screen;
-  background-color: white;
-  flex-direction: column;
-  width: 100%;
-  display: flex;
-}
-.statusBar {
-  flex: shrink;
-  background-color: white;
-  width: auto;
-  padding-left: 50px;
-  padding-top: 21px;
-}
-.statusBarContent {
-  justify-content: space-between;
-  align-items: center;
-  padding-left: 16px;
-  padding-right: 16px;
-  display: flex;
-}
-.time {
+/* Title style to match map page */
+.title {
   color: #000;
+  margin-top: 20px;
+  margin-bottom: 20px;
   font-family:
     SF Pro,
     -apple-system,
     Roboto,
     Helvetica,
     sans-serif;
-  font-size: 17px;
-  font-weight: 590;
-  line-height: 22px;
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
 }
-.statusIcons {
-  align-items: center;
-  gap: 7px;
-  display: flex;
-}
-.mainContent {
-  flex-direction: column;
-  flex: 1;
-  padding-left: 15px;
-  padding-right: 15px;
-  display: flex;
-}
-.headerSection {
-  align-items: center;
-  margin-top: 43px;
-  display: flex;
-}
-.title {
-  color: #000;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  font-family:
-    SF Pro,
-    -apple-system,
-    Roboto,
-    Helvetica,
-    sans-seriff;
-  font-size: 48px;
-}
+
+/* Thinner search input layout */
 .searchInputContainer {
   background-color: #fff;
   border: 1px solid #1e1e1e;
   border-radius: 9999px;
   align-items: center;
-  width: auto;
-  height: 55px;
-  padding-left: 16px;
-  padding-right: 16px;
+  width: 100%;
+  max-width: 600px;
+  height: 40px; /* reduced from 55px */
+  padding: 0 12px; /* tighter padding */
   display: flex;
+  margin-bottom: 20px;
 }
+
+/* Thinner input field */
 .searchInput {
   color: #1e1e1e;
   background-color: transparent;
@@ -246,34 +50,52 @@
     Roboto,
     Helvetica,
     sans-serif;
-  font-size: 16px;
+  font-size: 14px; /* slightly smaller text */
   border: none;
   outline: none;
+  padding: 4px 0;
 }
+
+/* Container for the navigation buttons */
 .optionsContainer {
-  flex-direction: column;
-  gap: 73px;
-  margin-top: 63px;
   display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 40px;
+  width: 100%;
+  max-width: 600px; /* widened */
 }
+
+/* Individual button styling */
 .optionButton {
   color: #000;
   background-color: #8fd2fd;
-  border: 1px solid #000;
-  border-radius: 15px;
+  border: none;
+  border-radius: 12px;
   width: 100%;
-  height: 108px;
+  height: 64px;
   font-family:
     SF Pro,
     -apple-system,
     Roboto,
     Helvetica,
     sans-serif;
-  font-size: 32px;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 20px;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   cursor: pointer;
   text-align: center;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
+
+.optionButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Bottom indicator */
 .bottomIndicatorContainer {
   justify-content: center;
   align-items: center;
@@ -282,10 +104,61 @@
   margin-bottom: 8px;
   display: flex;
 }
+
 .bottomIndicator {
   background-color: #000;
   border-radius: 100px;
   width: 144px;
   height: 5px;
 }
-2: 45 InputDesign.module.css;
+
+.statusBar {
+  width: 100%;
+  background-color: white;
+  padding: 8px 16px;
+}
+
+.statusBarContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.statusIcons {
+  display: flex;
+  align-items: center;
+}
+
+.leftItem,
+.centerItem,
+.rightItem {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.leftItem {
+  justify-content: flex-start;
+}
+
+.rightItem {
+  justify-content: flex-end;
+}
+
+.time {
+  font-family:
+    SF Pro,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 17px;
+  font-weight: 590;
+  color: #000;
+}
+
+.statusIcon {
+  height: 14px;
+  width: auto;
+}
