@@ -129,20 +129,21 @@ const SearchInput = () => {
     </div>
   );
 };
-// SearchOptions component for the three option buttons
+// SearchOptions component for the four option buttons
 const SearchOptions = () => {
   return (
     <section className={styles.optionsContainer}>
-      <button className={styles.optionButton}>All religions A-Z</button>
       <button className={styles.optionButton}>Location Map</button>
+      <button className={styles.optionButton}>All religions</button>
+      <button className={styles.optionButton}>Study Guide</button>
       <button className={styles.optionButton}>Discussion Board</button>
     </section>
   );
 };
 
-// Function to navigate to ReligionPage
+// Function to navigate to LocationMapPage
 const goToReligionPage = () => {
-  navigate('/religions');
+  navigate('/map');
 };
 
 // Function to navigate to ReligionPage
@@ -150,9 +151,14 @@ const goToReligionPage = () => {
   navigate('/religions');
 };
 
-// Function to navigate to ReligionPage
+// Function to navigate to the StudyGuide
 const goToReligionPage = () => {
-  navigate('/religions');
+  navigate('/studyguide');
+};
+
+// Function to navigate to Discussion Board
+const goToReligionPage = () => {
+  navigate('/discussion');
 };
 
 // BottomIndicator component for the bottom navigation indicator
