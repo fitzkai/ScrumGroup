@@ -5,4 +5,5 @@ export interface DiscussionItem {
   user: User;
   timePosted: string;
   response: string;
+  username: string;
 }

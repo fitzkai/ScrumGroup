@@ -3,10 +3,9 @@ import { Religion } from './Religion';
 import { User } from './User';
 
 export interface StudyGuide {
-  religion: any;
-  GuideId: number;
-  ReligionId: number;
-  Religion: Religion; // Include the full Religion object
+  guideId: number;
+  religionId: number;
+  religion: Religion; // Include the full Religion object
   UserId: number;
   User: User; // Include the full User object
   VideoSrc: string | null; // Handle nullable values
