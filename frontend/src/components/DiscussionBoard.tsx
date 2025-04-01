@@ -10,6 +10,7 @@ import BottomIndicator from './BottomIndicator';
 import { DiscussionItem } from '../types/DiscussionItem';
 import NewDiscussionItemForm from './NewDiscussionItemForm';
 import { fetchDiscussionItems } from '../api/DiscussionsAPI';
+import { useNavigate } from 'react-router-dom';
 // Extend DiscussionItem to include username
 interface DiscussionPostItem extends DiscussionItem {
   username: string;
@@ -58,19 +59,18 @@ const DiscussionBoard: React.FC = () => {
     fetchData();
   }, []);
   const filterTags = ['popular', 'recent', 'trending', 'Catholicism'];
+  const navigate = useNavigate();
   const handleBackClick = () => {
     console.log('Navigate back');
+    // Check if there's history to go back to
+    if (window.history.length > 1) {
+      navigate(-1);
+    } else {
+      navigate('/'); // Navigate to home or another fallback page if no history
+    }
   };
   return (
     <div>
-      {!showForm && (
-        <button
-          className="btn btn-success mb-3"
-          onClick={() => setShowForm(true)}
-        >
-          Add Discussion Item
-        </button>
-      )}
       {showForm && (
         <NewDiscussionItemForm
           onSuccess={() => {

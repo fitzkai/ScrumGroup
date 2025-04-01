@@ -1,5 +1,8 @@
 import './App.css';
 import DiscussionBoard from './components/DiscussionBoard';
+import HomeContent from './components/HomeContent';
+import InputDesign from './components/InputDesign';
+import Menu from './components/Menu';
 import ReligionPage from './components/ReligionPage';
 import StudyGuide from './components/StudyGuide';
 import MapSearch from './mapsearch_components/MapSearch';
@@ -10,11 +13,13 @@ function App() {
     <>
       <Router>
         <Routes>
-          <Route path="/" element={<MapSearch />} />
+          <Route path="/" element={<HomeContent />} />
           <Route path="/map" element={<MapSearch />} />
           <Route path="/religions" element={<ReligionPage />} />
-          <Route path="/studyguide/:ReligionId" element={<StudyGuide />} />
+          <Route path="/studyguide/:GuideId" element={<StudyGuide />} />
           <Route path="discussion" element={<DiscussionBoard />} />
+          <Route path="/menu" element={<Menu />} />
+          <Route path="/search" element={<InputDesign />} />
         </Routes>
       </Router>
     </>
