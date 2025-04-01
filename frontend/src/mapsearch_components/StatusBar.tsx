@@ -34,7 +34,7 @@ const StatusBar: React.FC = () => {
               Map Search
             </Link>
             <Link
-              to="/studyguide"
+              to="/studyguide/:GuideId"
               className="dropdown-item"
               onClick={() => setIsOpen(false)}
             >

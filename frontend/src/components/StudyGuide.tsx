@@ -104,7 +104,7 @@ const StudyGuide: React.FC = () => {
         </div>
 
         <h1 className="page-title">
-          {studyGuide?.religion?.religionName} Study Guide
+          {studyGuide?.Religion?.religionName} Study Guide
         </h1>
 
         <div className="progress-bar-container">
@@ -145,7 +145,7 @@ const StudyGuide: React.FC = () => {
 
         <div className="question-container">
           <h2 className="question-text">
-            How does {studyGuide?.religion?.religionName} differ from your
+            How does {studyGuide?.Religion?.religionName} differ from your
             religion?
           </h2>
         </div>
@@ -161,7 +161,7 @@ const StudyGuide: React.FC = () => {
 
         <div className="question-container">
           <h2 className="question-text">
-            How is {studyGuide?.religion?.religionName} similar to your
+            How is {studyGuide?.Religion?.religionName} similar to your
             religion?
           </h2>
         </div>
