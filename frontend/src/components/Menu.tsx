@@ -1,6 +1,7 @@
 'use client';
 import * as React from 'react';
 import styles from './Menu.module.css';
+import { useNavigate } from "react-router-dom";
 
 // StatusBar component for the top section
 const StatusBar = () => {
@@ -28,12 +29,15 @@ const StatusBar = () => {
 
 // CircularIcon component for the blue circular section
 const CircularIcon = () => {
+  const navigate = useNavigate();
+
   return (
     <div className={styles.div2}>
       <img
         src="https://cdn.builder.io/api/v1/image/assets/TEMP/88d6defdbcd41d7fd88a9ce8b38eb31f4513a12630504acfbb9d950719836a1a?placeholderIfAbsent=true&apiKey=401ab768922c453b98ebcf2dec4c4d64"
         className={styles.img3}
         alt="Menu icon"
+        onClick={() => navigate(-1)}
       />
     </div>
   );
@@ -49,10 +53,12 @@ interface MenuItemProps {
 
 // MenuItem component for each menu option
 const MenuItem: React.FC<MenuItemProps> = ({ iconSrc, text, className, imgClassName }) => {
+  const navigate = useNavigate();
+
   return (
     <nav className={className}>
-      <img src={iconSrc} className={imgClassName} alt={`${text} icon`} />
-      <h2 className={styles[text.toLowerCase() as keyof typeof styles]}>{text}</h2>
+      <img src={iconSrc} className={imgClassName} alt={`${text} icon`}/>
+      <button className={styles[text.toLowerCase() as keyof typeof styles]} onClick={() => navigate(`/${text.toLowerCase()}`)}>{text}</button>
     </nav>
   );
 };
@@ -77,6 +83,8 @@ function Menu() {
       <div className={styles.div}>
         <CircularIcon />
 
+<br />
+<br />
         <main className={styles.div3}>
           <MenuItem
             iconSrc="https://cdn.builder.io/api/v1/image/assets/TEMP/b134e21fac10a709e12dd07d4f07694299d5ca5c3b53940aa0469fc6dd2198c0?placeholderIfAbsent=true&apiKey=401ab768922c453b98ebcf2dec4c4d64"

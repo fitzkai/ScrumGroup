@@ -1,6 +1,6 @@
 .homepage {
     background-color: #fbfbfb;
-    width: 100%;
+    width: 480px;
     max-width: 480px;
     margin-left: auto;
     margin-right: auto;
@@ -10,7 +10,7 @@
     background-color: #fbfbfb;
     width: auto;
     min-height: 50px;
-    padding-top: 21px;
+    padding-top: 40px;
   }
   .frame {
     justify-content: space-between;
@@ -154,5 +154,3 @@
     display: flex;
     margin-bottom: -50px;
   }
-  
-  
