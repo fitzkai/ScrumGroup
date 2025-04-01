@@ -5,6 +5,7 @@ import YouTubeEmbed from './YouTubeEmbed';
 import { StudyGuide as StudyGuideType } from '../types/StudyGuide';
 import { useNavigate } from 'react-router-dom';
 import { useParams } from 'react-router-dom';
+import StatusBar from './StatusBar';
 
 const StudyGuide: React.FC = () => {
   // State to store user responses
@@ -12,6 +13,7 @@ const StudyGuide: React.FC = () => {
   const [studyGuide, setStudyGuide] = useState<StudyGuideType | null>(null); // Change undefined to null
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string>();
+  const navigate = useNavigate();
 
   const [responses, setResponses] = useState({
     learned: '',
@@ -20,6 +22,9 @@ const StudyGuide: React.FC = () => {
     similarities: '',
     additionalNotes: '',
   });
+  const handleMenuClick = () => {
+    navigate('/menu');
+  };
 
   useEffect(() => {
     if (!GuideId) return; // Skip if GuideId is not available yet
@@ -91,15 +96,10 @@ const StudyGuide: React.FC = () => {
 
   return (
     <div className="study-guide-container">
-      <div className="status-bar">
-        <div className="status-time"></div>
-        <div className="status-icons">
-          <div className="network-icons">{/* Status Bar Icons */}</div>
-        </div>
-      </div>
+      <StatusBar />
 
       <div className="content-container">
-        <div className="menu-icon">
+        <div className="menu-icon" onClick={handleMenuClick}>
           <MenuIcon />
         </div>
 
@@ -107,14 +107,8 @@ const StudyGuide: React.FC = () => {
           {studyGuide?.religion?.religionName} Study Guide
         </h1>
 
-        <div className="progress-bar-container">
-          <div className="progress-bar">
-            <div className="progress-dot"></div>
-          </div>
-        </div>
-
         <div className="video-container">
-          <YouTubeEmbed url={studyGuide.VideoSrc!} />
+          <YouTubeEmbed url="https://youtu.be/qH5HIPl0hRo?si=HL4DvVCl4_P-jA6E" />
         </div>
 
         {/* Input Fields with State Tracking */}
