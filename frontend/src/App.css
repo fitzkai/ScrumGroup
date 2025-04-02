@@ -2,7 +2,8 @@
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
-  text-align: center;
+  text-align: left;
+  color: black;
 }
 
 .logo {
@@ -39,4 +40,14 @@
 
 .read-the-docs {
   color: #888;
+}
+
+.study-guide-button {
+  margin-top: 20px;
+  background-color: #6eafde;
+  color: white;
+}
+
+.study-guide-button:hover {
+  background-color: #5a9ac7;
 }

@@ -1,7 +1,13 @@
 {
-  "files": [],
-  "references": [
-    { "path": "./tsconfig.app.json" },
-    { "path": "./tsconfig.node.json" }
-  ]
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "strict": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "target": "es2015", // Ensure it targets ES2015 or later
+    "lib": ["dom", "es2015"], // Include ES2015 and DOM types
+    "skipLibCheck": true // Optionally skip library type checks for performance
+  },
+  "include": ["src/**/*"]
 }

@@ -1,0 +1,397 @@
+.menu {
+  background-color: #fbfbfb;
+  width: 100%;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+.statusBarIPhone {
+  background-color: #fbfbfb;
+  width: 100%;
+  min-height: 50px;
+  padding-top: 21px;
+}
+.frame {
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  display: flex;
+}
+.time {
+  color: #000;
+  white-space: nowrap;
+  text-align: center;
+  flex: 1;
+  align-self: stretch;
+  gap: 10px;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-left: 16px;
+  padding-right: 6px;
+  font-family:
+    SF Pro,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 17px;
+  font-weight: 590;
+  line-height: 1;
+}
+.dynamicIslandspacer {
+  flex-shrink: 0;
+  align-self: stretch;
+  width: 124px;
+  height: 10px;
+  margin-top: auto;
+  margin-bottom: auto;
+  display: flex;
+}
+.levels {
+  flex: 1;
+  justify-content: center;
+  align-self: stretch;
+  align-items: center;
+  gap: 7px;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-left: 6px;
+  padding-right: 16px;
+  display: flex;
+}
+.img {
+  aspect-ratio: 1.58;
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 0;
+  align-self: stretch;
+  width: 19px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.img2 {
+  aspect-ratio: 1.42;
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 0;
+  align-self: stretch;
+  width: 17px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.div {
+  background-color: #7ecdff;
+  width: auto;
+  margin-top: 54px;
+  padding-bottom: 8px;
+}
+.div2 {
+  z-index: 10;
+  background-color: #6eafde;
+  border-radius: 50%;
+  flex-direction: column;
+  align-items: start;
+  width: auto;
+  margin-top: -43px;
+  padding-bottom: 74px;
+  padding-left: 18px;
+  padding-right: 18px;
+  display: flex;
+}
+.img3 {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  fill: #1d1b20;
+  width: 16px;
+}
+.div3 {
+  color: #000;
+  flex-direction: column;
+  align-items: stretch;
+  width: auto;
+  margin-top: 73px;
+  padding-left: 51px;
+  padding-right: 51px;
+  font-family:
+    Source Sans Pro,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  display: flex;
+}
+.div4 {
+  white-space: nowrap;
+  align-self: start;
+  align-items: stretch;
+  gap: 17px;
+  margin-left: 16px;
+  display: flex;
+}
+.img4 {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 0;
+  width: 48px;
+}
+.search {
+  flex-basis: auto;
+  align-self: start;
+}
+.img5 {
+  aspect-ratio: 142.86;
+  object-fit: contain;
+  object-position: center;
+  width: 100%;
+  margin-top: 14px;
+}
+.div5 {
+  align-self: start;
+  align-items: stretch;
+  gap: 19px;
+  margin-top: 27px;
+  margin-left: 16px;
+  display: flex;
+}
+.img6 {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 0;
+  width: 48px;
+}
+.map {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.img7 {
+  aspect-ratio: 142.86;
+  object-fit: contain;
+  object-position: center;
+  width: 100%;
+  margin-top: 39px;
+}
+.div6 {
+  white-space: nowrap;
+  align-self: start;
+  align-items: stretch;
+  gap: 19px;
+  margin-top: 19px;
+  margin-left: 16px;
+  display: flex;
+}
+.img8 {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 0;
+  width: 48px;
+}
+.religions {
+  flex-basis: auto;
+  align-self: start;
+}
+.homeIndicator {
+  background-color: #000;
+  border-radius: 100px;
+  flex-shrink: 0;
+  align-self: center;
+  width: 144px;
+  height: 5px;
+  margin-top: 367px;
+  display: flex;
+}
+    background-color: #fbfbfb;
+    width: auto;
+    max-width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+  }
+  .statusBarIPhone {
+    background-color: white;
+    width: 100%;
+    padding-top: 21px;
+  }
+  .frame {
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    display: flex;
+  }
+  .time {
+    color: #000;
+    white-space: nowrap;
+    text-align: center;
+    flex: 1;
+    align-self: stretch;
+    gap: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-left: 16px;
+    padding-right: 6px;
+    font-family: SF Pro, -apple-system, Roboto, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: 590;
+    line-height: 1;
+  }
+  .dynamicIslandspacer {
+    flex-shrink: 0;
+    align-self: stretch;
+    width: 124px;
+    height: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+  }
+  .levels {
+    flex: 1;
+    justify-content: center;
+    align-self: stretch;
+    align-items: center;
+    gap: 7px;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-left: 6px;
+    padding-right: 16px;
+    display: flex;
+  }
+  .img {
+    aspect-ratio: 1.58;
+    object-fit: contain;
+    object-position: center;
+    flex-shrink: 0;
+    align-self: stretch;
+    width: 19px;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .img2 {
+    aspect-ratio: 1.42;
+    object-fit: contain;
+    object-position: center;
+    flex-shrink: 0;
+    align-self: stretch;
+    width: 17px;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .div {
+    background-color: #7ecdff;
+    width: auto;
+    padding-bottom: 8px;
+  }
+  .img3 {
+    object-fit: contain;
+    object-position: center;
+    fill: #1d1b20;
+    width: 16px;
+    margin-right: 400px; /* Pushes it to the left */
+    cursor: pointer;
+  }
+  
+  .div3 {
+    color: #000;
+    flex-direction: column;
+    width: auto;
+    padding-left: 51px;
+    padding-right: 51px;
+    font-family: Source Sans Pro, -apple-system, Roboto, Helvetica, sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    display: flex;
+  }
+  .div4 {
+    white-space: nowrap;
+    align-self: start;
+    align-items: stretch;
+    gap: 17px;
+    margin-left: 16px;
+    display: flex;
+  }
+  .img4 {
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+    flex-shrink: 0;
+    width: 48px;
+  }
+  .search {
+    flex-basis: auto;
+    align-self: start;
+  }
+  .img5 {
+    aspect-ratio: 142.86;
+    object-fit: contain;
+    object-position: center;
+    width: 100%;
+    margin-top: 14px;
+  }
+  .div5 {
+    align-self: start;
+    align-items: stretch;
+    gap: 19px;
+    margin-top: 27px;
+    margin-left: 16px;
+    display: flex;
+  }
+  .img6 {
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+    flex-shrink: 0;
+    width: 48px;
+  }
+  .map {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .img7 {
+    aspect-ratio: 142.86;
+    object-fit: contain;
+    object-position: center;
+    width: 100%;
+    margin-top: 39px;
+  }
+  .div6 {
+    white-space: nowrap;
+    align-self: start;
+    align-items: stretch;
+    gap: 19px;
+    margin-top: 19px;
+    margin-left: 16px;
+    display: flex;
+    margin-bottom: -110px;
+  }
+  .img8 {
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+    flex-shrink: 0;
+    width: 48px;
+  }
+  .religions {
+    flex-basis: auto;
+    align-self: start;
+  }
+  .homeIndicator {
+    background-color: #000;
+    border-radius: 100px;
+    flex-shrink: 0;
+    align-self: center;
+    width: 144px;
+    height: 5px;
+    margin-top: 367px;
+    display: flex;
+  }
+  
+  button {
+    background-color: #7ecdff;
+    color: #000;
+    font-weight: bold;
+  }

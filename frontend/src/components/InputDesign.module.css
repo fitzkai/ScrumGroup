@@ -85,7 +85,6 @@
   font-family: Inter;
   font-size: 11px;
   line-height: 1.4;
-  text-align: left;
 }
 .div16 {
   flex-direction: column;
@@ -97,14 +96,6 @@
   align-items: center;
   gap: 8px;
   display: flex;
-  cursor: pointer; /* Show pointer cursor to indicate it's clickable */
-  transition:
-    background-color 0.3s ease,
-    color 0.3s ease;
-}
-.div17:hover {
-  background-color: #f0f0f0; /* Light grey background on hover */
-  border-radius: 8px;
 }
 .div18 {
   color: #000;
@@ -115,14 +106,6 @@
   align-items: center;
   gap: 8px;
   display: flex;
-  cursor: pointer; /* Show pointer cursor to indicate it's clickable */
-  transition:
-    background-color 0.3s ease,
-    color 0.3s ease;
-}
-.div19:hover {
-  background-color: #f0f0f0; /* Light grey background on hover */
-  border-radius: 8px;
 }
 .div20 {
   color: #000;
@@ -133,16 +116,6 @@
   align-items: center;
   gap: 8px;
   display: flex;
-  cursor: pointer; /* Show pointer cursor to indicate it's clickable */
-  transition:
-    background-color 0.3s ease,
-    color 0.3s ease;
-}
-
-/* Hover effect for visual feedback */
-.div21:hover {
-  background-color: #f0f0f0; /* Light grey background on hover */
-  border-radius: 8px;
 }
 .div22 {
   color: #000;
@@ -200,7 +173,6 @@
   font-family: Inter;
   font-size: 12px;
   line-height: 1.4;
-  text-align: left;
 }
 .div32 {
   flex-direction: column;
@@ -212,14 +184,6 @@
   align-items: center;
   gap: 8px;
   display: flex;
-  cursor: pointer; /* Show pointer cursor to indicate it's clickable */
-  transition:
-    background-color 0.3s ease,
-    color 0.3s ease;
-}
-.div33:hover {
-  background-color: #f0f0f0; /* Light grey background on hover */
-  border-radius: 8px;
 }
 .div34 {
   color: #000;
@@ -230,14 +194,6 @@
   align-items: center;
   gap: 8px;
   display: flex;
-  cursor: pointer; /* Show pointer cursor to indicate it's clickable */
-  transition:
-    background-color 0.3s ease,
-    color 0.3s ease;
-}
-.div35:hover {
-  background-color: #f0f0f0; /* Light grey background on hover */
-  border-radius: 8px;
 }
 .div36 {
   color: #000;
@@ -248,14 +204,6 @@
   align-items: center;
   gap: 8px;
   display: flex;
-  cursor: pointer; /* Show pointer cursor to indicate it's clickable */
-  transition:
-    background-color 0.3s ease,
-    color 0.3s ease;
-}
-.div37:hover {
-  background-color: #f0f0f0; /* Light grey background on hover */
-  border-radius: 8px;
 }
 .div38 {
   color: #000;
@@ -313,7 +261,6 @@
   font-family: Inter;
   font-size: 12px;
   line-height: 1.4;
-  text-align: left;
 }
 .div48 {
   flex-direction: column;
@@ -325,14 +272,6 @@
   align-items: center;
   gap: 8px;
   display: flex;
-  cursor: pointer; /* Show pointer cursor to indicate it's clickable */
-  transition:
-    background-color 0.3s ease,
-    color 0.3s ease;
-}
-.div49:hover {
-  background-color: #f0f0f0; /* Light grey background on hover */
-  border-radius: 8px;
 }
 .div50 {
   color: #000;
@@ -343,14 +282,6 @@
   align-items: center;
   gap: 8px;
   display: flex;
-  cursor: pointer; /* Show pointer cursor to indicate it's clickable */
-  transition:
-    background-color 0.3s ease,
-    color 0.3s ease;
-}
-.div51:hover {
-  background-color: #f0f0f0; /* Light grey background on hover */
-  border-radius: 8px;
 }
 .div52 {
   color: #000;
@@ -361,14 +292,6 @@
   align-items: center;
   gap: 8px;
   display: flex;
-  cursor: pointer; /* Show pointer cursor to indicate it's clickable */
-  transition:
-    background-color 0.3s ease,
-    color 0.3s ease;
-}
-.div53:hover {
-  background-color: #f0f0f0; /* Light grey background on hover */
-  border-radius: 8px;
 }
 .div54 {
   color: #000;
@@ -398,10 +321,4 @@
   border-radius: 100px;
   width: 144px;
   height: 5px;
-}
-.external_resources {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  width: 100%;
 }
