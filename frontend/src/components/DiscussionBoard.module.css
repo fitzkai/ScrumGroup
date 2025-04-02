@@ -27,7 +27,9 @@
   gap: 10px;
   padding-left: 16px;
   padding-right: 6px;
-  font-family: SF Pro, sans-serif;
+  font-family:
+    SF Pro,
+    sans-serif;
   font-size: 17px;
   font-weight: 590;
   line-height: 22px;
@@ -148,6 +150,7 @@
   font-family: Inter, sans-serif;
   font-size: 16px;
   font-weight: 400;
+  text-align: left;
 }
 
 .replyButton {
@@ -178,4 +181,30 @@
   border-radius: 100px;
   width: 144px;
   height: 5px;
+}
+
+.replyInput {
+  width: 100%; /* Let JS handle the width dynamically */
+  max-width: 100%; /* Ensure that it doesn't grow beyond its container */
+  resize: none; /* Optional: to prevent the user from resizing the text box */
+  min-height: 50px; /* Minimum height to make it consistent */
+}
+
+.repliesSection {
+  text-align: left;
+}
+
+.search-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  margin-left: 5px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.search-button:hover {
+  background-color: #0056b3;
 }
