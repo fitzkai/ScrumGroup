@@ -10,14 +10,14 @@ export const PageHeader: React.FC<PageHeaderProps> = ({ title }) => {
   const navigate = useNavigate();
   return (
     <header className={styles.div6}>
-      <button aria-label="Menu">
+      <button aria-label="Menu" className="menu-button">
         <svg
           width="30"
           height="31"
           viewBox="0 0 30 31"
-          fill="none"
+          fill="#efefef"
           xmlns="http://www.w3.org/2000/svg"
-          onClick={() => navigate(-1)}
+          onClick={() => navigate('/menu')}
         >
           <path
             d="M3.75 23.25V20.6667H26.25V23.25H3.75ZM3.75 16.7917V14.2083H26.25V16.7917H3.75ZM3.75 10.3333V7.75H26.25V10.3333H3.75Z"

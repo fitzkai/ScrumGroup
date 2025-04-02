@@ -3,7 +3,7 @@ import InputDesign from './InputDesign';
 import { ReligionCard } from './ReligionCard';
 import { Religion } from '../types/religion';
 import { useState, useEffect } from 'react';
-import { fetchReligions } from '../api/ReligionApi';
+import { fetchReligions } from '../api/ReligionAPI';
 import styles from './InputDesign.module.css'; // Ensure you import styles
 import StatusBar from './StatusBar';
 import { PageHeader } from './PageHeader';
@@ -34,9 +34,13 @@ function ReligionPage() {
           <PageHeader title="Religion Information" />
         </section>
         {religions.map((r) => (
-          <div key={r.religionId}>
+          <div key={r.religionID}>
             {/* Render ReligionCard */}
-            <ReligionCard name={r.religionName} overview={r.overview} />
+            <ReligionCard
+              religionId={r.religionID}
+              name={r.religionName}
+              overview={r.overview}
+            />
             <br />
           </div>
         ))}

@@ -21,14 +21,14 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
     <div className={styles.searchBar}>
       <input
         type="text"
-        placeholder="Search"
+        placeholder="      Search"
         className={styles.searchInput}
         value={searchQuery}
         onChange={handleSearch}
         aria-label="Search discussions"
       />
       <button
-        className="search-button"
+        className="search-button menu-button"
         aria-label="Search"
         onClick={() => onSearch?.(searchQuery)}
       >

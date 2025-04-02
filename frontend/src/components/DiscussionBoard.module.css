@@ -69,7 +69,10 @@
 
 .searchBar {
   width: 100%;
-  padding: var(--sds-size-space-300) var(--sds-size-space-400);
+  padding-top: var(--sds-size-space-300);
+  padding-right: var(--sds-size-space-400);
+  padding-bottom: var(--sds-size-space-300);
+  padding-left: var(--sds-size-space-5000); /* Left padding */
   align-items: center;
   gap: var(--sds-size-space-200);
   border: 1px solid #000;
@@ -207,4 +210,14 @@
 
 .search-button:hover {
   background-color: #0056b3;
+}
+.header button {
+  background: none; /* Remove the button background */
+  border: none; /* Remove the button's border */
+  padding: 0; /* Remove any padding */
+  cursor: pointer; /* Change the cursor to a pointer when hovering */
+}
+
+.header button svg {
+  fill: #1d1b20; /* You can adjust this color to match your design */
 }

@@ -3,11 +3,13 @@ import styles from './InputDesign.module.css';
 import { FeatureLink } from './FeatureLink';
 
 interface ReligionCardProps {
+  religionId: number;
   name: string;
   overview: string;
 }
 
 export const ReligionCard: React.FC<ReligionCardProps> = ({
+  religionId,
   name,
   overview,
 }) => {
@@ -169,7 +171,7 @@ export const ReligionCard: React.FC<ReligionCardProps> = ({
             title="Study Guide"
             religionName={name}
             featureType="study"
-            destination="/StudyGuide"
+            destination={`/StudyGuide/${religionId}`}
           />
           <FeatureLink
             title="Similarities & Differences"
@@ -181,11 +183,11 @@ export const ReligionCard: React.FC<ReligionCardProps> = ({
             title="Discussion Board"
             religionName={name}
             featureType="discussion"
-            destination="/DiscussionBoard"
+            destination="/discussion"
           />
         </div>
       </div>
-      <button className="external_resources">
+      <button className="external_resources menu-button">
         <div className={getExternalResourcesClass()}>
           <ExternalLinkIcon />
           <span className={getExternalResourcesTextClass()}>
